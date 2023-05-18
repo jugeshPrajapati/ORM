@@ -8,9 +8,15 @@ module.exports=(sequelize,DataTypes)=>{
             allowNull : false
         },
         phone:{
-            type : DataTypes.BIGINT
+            type : DataTypes.BIGINT,
+            unique:true,
+            // validate:{
+            //     is:/^{0-9}/i
+            // },
+        },
+        user_id:DataTypes.BIGINT
           
-        }},
+        },
     // { tableName : 'users'} define table name
     {timestamps: false} // remove create / update time columns  
     );

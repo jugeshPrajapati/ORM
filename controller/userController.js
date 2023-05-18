@@ -1,6 +1,7 @@
 const db = require("../models/index")
 
 const User =db.user;
+const Contact=db.contact;
 // const addUser = async (req,res) =>{
 //     const jane =await User.create({firstName : "jane"});
 //     //create = build+save
@@ -73,11 +74,37 @@ const updateUser = async (req,res) =>{
         res.status(500).json(error.message);
     }
 }
+
+const oneToOneUser = async (req,res) =>{
+    try {
+        //data inserted into first table even if table two give error instead of revert 
+    //    const data =await User.create({firstName:'ok3',lastName:'l3ol'});
+    //    if(data && data.id){
+    //     await Contact.create({address:'xcv',phone:34562278902,'user_id':data.id});
+    //    }
+            const data = await User.findAll(
+                {
+                    attributes:['firstName','lastName'],
+                    include:[{
+                        model:Contact,
+                        attributes:['address','phone']
+                    }],
+                    
+                }
+            )
+
+        res.status(200).json(data);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json(error.message);
+    }
+}
 module.exports={
     // addUser,
     getUsers,
     getUser,
     postUser,
     deleteUser,
-    updateUser
+    updateUser,
+    oneToOneUser
 }

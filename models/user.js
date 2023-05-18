@@ -4,7 +4,12 @@ module.exports= (sequelize,DataTypes)=>{
         {
         firstName:{
             type : DataTypes.STRING,
-            allowNull : false
+            allowNull : false,
+            get(){
+        
+            const rawValue =this.getDataValue('firstName');
+            return rawValue ? 'Mr.'+rawValue.toUpperCase():null;
+            }
         },
         lastName:{
             type : DataTypes.STRING,

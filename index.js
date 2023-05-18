@@ -16,6 +16,7 @@ app.get('/getAll', userCtrl.getUsers)
 app.get('/get/:id', userCtrl.getUser)
 app.delete('/delete/:id',userCtrl.deleteUser)
 app.patch('/update/:id',userCtrl.updateUser)
+app.get('/one-to-one', userCtrl.oneToOneUser)
 // User.sync({force : true}); DROP TABLE IF EXISTS
 // User.sync({alter : true});
 // Users.sync({alter : true}) //Update table
