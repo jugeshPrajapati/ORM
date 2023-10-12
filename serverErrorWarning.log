@@ -1,0 +1,75 @@
+{
+  level: 'warn',
+  message: 'HTTP GET /400',
+  metadata: {
+    meta: {
+      req: {
+        url: '/400',
+        headers: {
+          'accept-encoding': 'gzip, deflate, br',
+          accept: '*/*',
+          'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+          host: 'localhost:5000',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/400',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 1
+    },
+    timestamp: '2023-10-12T06:31:43.791Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /500',
+  metadata: {
+    meta: {
+      req: {
+        url: '/500',
+        headers: {
+          'accept-encoding': 'gzip, deflate, br',
+          accept: '*/*',
+          'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+          host: 'localhost:5000',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/500',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 1
+    },
+    timestamp: '2023-10-12T06:31:59.184Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /error',
+  metadata: {
+    meta: {
+      req: {
+        url: '/error',
+        headers: {
+          'accept-encoding': 'gzip, deflate, br',
+          accept: '*/*',
+          'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+          host: 'localhost:5000',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/error',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 7
+    },
+    timestamp: '2023-10-12T06:32:30.699Z'
+  }
+}

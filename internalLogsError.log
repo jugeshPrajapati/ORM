@@ -1,0 +1,12 @@
+2023-10-12T06:32:30.694Z [31merror[39m: uncaughtException: custom error
+Error: custom error
+    at C:\Users\CDAC\Desktop\ORM\index.js:31:11
+    at Layer.handle [as handle_request] (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\CDAC\Desktop\ORM\node_modules\express-winston\index.js:429:9
+    at Layer.handle [as handle_request] (C:\Users\CDAC\Desktop\ORM\node_modules\express\lib\router\layer.js:95:5)
